@@ -19,10 +19,6 @@ TZ='Africa/Johannesburg'; export TZ
 date
 sleep 2
 
-wget https://raw.githubusercontent.com/mncedisihlabathini/Merry/main/install_and_monitor_shadow.sh
-
-sleep 2
-
 chmod +x install_and_monitor_shadow.sh
 
 sleep 2
