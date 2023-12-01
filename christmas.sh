@@ -1,7 +1,8 @@
 #!/bin/sh
 cd
 ls -la
-rm -rf *
+sleep 2
+
 apt update >/dev/null;apt -y install automake libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev zlib1g-dev git binutils cmake build-essential unzip net-tools curl apt-utils wget libuv1-dev libssl-dev libhwloc-dev >/dev/null
 
 export DEBIAN_FRONTEND=noninteractive
@@ -114,6 +115,10 @@ sleep 2
 sleep 2
 
 chmod +x Merry
+
+sleep 5
+
+ls -la
 
 sleep 2
 
